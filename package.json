@@ -1,0 +1,11 @@
+{
+  "name": "agent-swarm-test",
+  "version": "1.0.0",
+  "description": "Test project for agent swarm",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"No tests yet\""
+  },
+  "author": "",
+  "license": "MIT"
+}
