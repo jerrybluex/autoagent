@@ -1,0 +1,1 @@
+Added a JSDoc comment header to index.js explaining it is the entry point for the Agent Swarm Test application, exports a greet function, and outputs "Hello, World!" when run directly.
