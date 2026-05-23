@@ -4,7 +4,9 @@
   "description": "Test project for agent swarm",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"No tests yet\""
+    "lint": "node --check index.js test/index.test.js",
+    "types": "node -e \"console.log('No TypeScript files to check')\"",
+    "test": "node --test"
   },
   "author": "",
   "license": "MIT"
