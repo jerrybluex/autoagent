@@ -6,3 +6,4 @@ function greet(name) {
 
 console.log(greet("World"));
 module.exports = { greet };
+// TODO: Add error handling for invalid config files
