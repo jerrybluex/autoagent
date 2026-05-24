@@ -3,9 +3,15 @@
   "version": "1.0.0",
   "description": "Test project for agent swarm",
   "main": "index.js",
+  "bin": {
+    "agent-swarm-test": "./index.js"
+  },
   "scripts": {
-    "test": "echo \"No tests yet\""
+    "test": "jest"
   },
   "author": "",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "^30.4.2"
+  }
 }
