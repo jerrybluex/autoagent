@@ -7,5 +7,8 @@
     "test": "echo \"No tests yet\""
   },
   "author": "",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "@babel/compat-data": "7.29.7"
+  }
 }
