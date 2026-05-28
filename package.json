@@ -9,8 +9,9 @@
   "author": "",
   "license": "MIT",
   "devDependencies": {
-    "@babel/compat-data": "^8.0.0-rc.6",
-    "@babel/helper-compilation-targets": "^8.0.0-rc.6",
-    "jest": "^30.4.2"
+    "@babel/compat-data": "8.0.0-rc.6",
+    "@babel/core": "8.0.0-rc.6",
+    "@babel/helper-compilation-targets": "8.0.0-rc.6",
+    "jest": "30.0.0-rc.1"
   }
 }
