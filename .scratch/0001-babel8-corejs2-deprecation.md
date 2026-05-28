@@ -4,33 +4,43 @@ description: Track TODO removal of corejs2-built-ins for Babel 8
 metadata:
   type: issue
   priority: low
-  status: open
+  status: resolved
   created: 2026-05-28
+  resolved: 2026-05-28
+  resolution: Upstream handled - @babel/compat-data v8.0.0-rc.6 already removed corejs2-built-ins
   tags: [babel, compatibility, deprecation]
 ---
 
 # Issue: Remove corejs2-built-ins entry for Babel 8
 
-## Context
-`@babel/compat-data` 包导出一个 `corejs2-built-ins` 入口：
-```javascript
-// Todo (Babel 8): remove this file as Babel 8 drop support of core-js 2
-module.exports = require("./data/corejs2-built-ins.json");
-```
+## Status: RESOLVED ✅
 
-## Problem
-Babel 8 will drop support for core-js 2. This entry point should be removed from the package's `exports` field in `package.json`:
-```json
-"./corejs2-built-ins": "./corejs2-built-ins.js"  // ← remove this line
-```
-
-## Action Items
-- [ ] Update `@babel/compat-data/package.json` to remove `./corejs2-built-ins` export
-- [ ] Remove `corejs2-built-ins.js` file or add deprecation warning
-- [ ] Update any dependents that import `@babel/compat-data/corejs2-built-ins`
+This issue is **upstream** - handled by the Babel team in `@babel/compat-data` v8.0.0-rc.6.
 
 ## Verification
-After fix, verify that importing `@babel/compat-data/corejs2-built-ins` returns `undefined` or throws appropriate error.
+
+```bash
+# File does not exist
+ls node_modules/@babel/compat-data/corejs2-built-ins.js  # → No such file
+
+# Export not in package.json
+grep corejs2-built-ins node_modules/@babel/compat-data/package.json  # → No match
+
+# Test passes (Babel 8 behavior confirmed)
+npm test  # → PASS corejs2-deprecation.test.js
+```
+
+## Context
+`@babel/compat-data` v8.0.0-rc.6 does NOT export `corejs2-built-ins`:
+- The `corejs2-built-ins.js` file was removed
+- The `./corejs2-built-ins` export was removed from `package.json`
+
+This is correct Babel 8 behavior - core-js 2 support is dropped.
+
+## Action Items
+- [x] Update `@babel/compat-data/package.json` to remove `./corejs2-built-ins` export — **Done by upstream**
+- [x] Remove `corejs2-built-ins.js` file — **Done by upstream**
+- [x] Update any dependents that import `@babel/compat-data/corejs2-built-ins` — **N/A (no dependents in this repo)**
 
 ## Notes
-This is a **Babel core team** responsibility, not a user action. Track for awareness.
+This is a **Babel core team** responsibility, not a user action. Tracked for awareness only.
