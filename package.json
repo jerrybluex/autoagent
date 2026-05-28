@@ -4,7 +4,14 @@
   "description": "Test project for agent swarm",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"No tests yet\""
+    "test": "npx jest"
+  },
+  "dependencies": {
+    "@babel/compat-data": "^7.26.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.26.0",
+    "jest": "^29.7.0"
   },
   "author": "",
   "license": "MIT"
