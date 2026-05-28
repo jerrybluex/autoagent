@@ -4,8 +4,12 @@
   "description": "Test project for agent swarm",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"No tests yet\""
+    "test": "jest"
   },
   "author": "",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "@babel/compat-data": "^8.0.0-rc.6",
+    "jest": "^30.4.2"
+  }
 }
