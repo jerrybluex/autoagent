@@ -2,6 +2,10 @@
 const fs = require('fs');
 const path = require('path');
 
+function greet(name) {
+  return `Hello, ${name}!`;
+}
+
 /**
  * Load and validate configuration from package.json
  * @param {string} configPath - Path to config file (default: package.json)
@@ -45,14 +49,5 @@ function loadConfig(configPath = 'package.json') {
   return config;
 }
 
-function greet(name) {
-  return `Hello, ${name}!`;
-}
-
-function greetWithConfig(name) {
-  const config = loadConfig();
-  return `Hello, ${name}! (${config.name} v${config.version})`;
-}
-
 console.log(greet("World"));
-module.exports = { greet, loadConfig, greetWithConfig };
+module.exports = { greet, loadConfig };
