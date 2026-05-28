@@ -4,7 +4,9 @@
   "description": "Test project for agent swarm",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"No tests yet\""
+    "test": "jest",
+    "lint": "echo \"No lint yet\"",
+    "typecheck": "echo \"No typecheck yet\""
   },
   "author": "",
   "license": "MIT",
