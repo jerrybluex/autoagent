@@ -4,8 +4,9 @@ description: Track TODO removal of corejs2-built-ins for Babel 8
 metadata:
   type: issue
   priority: low
-  status: open
+  status: completed
   created: 2026-05-28
+  completed: 2026-05-28
   tags: [babel, compatibility, deprecation]
 ---
 
