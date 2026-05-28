@@ -4,8 +4,17 @@
   "description": "Test project for agent swarm",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"No tests yet\""
+    "test": "jest"
   },
   "author": "",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/compat-data": "8.0.0-rc.6",
+    "@babel/core": "8.0.0-rc.6",
+    "@babel/helper-compilation-targets": "8.0.0-rc.6",
+    "jest": "30.0.0-rc.1"
+  },
+  "overrides": {
+    "@babel/compat-data": "8.0.0-rc.6"
+  }
 }
