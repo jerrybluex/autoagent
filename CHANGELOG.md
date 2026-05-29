@@ -9,6 +9,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
+- **Config Loading**: `loadConfig()` function in `index.js`:
+  - Resolves absolute paths for config files
+  - Validates file existence with descriptive errors
+  - Parses JSON with structured error handling
+  - Validates config structure (requires `name` field as non-empty string)
+- **Test Coverage**: `index.test.js` with 5 test cases covering:
+  - `greet()` function behavior
+  - Valid config loading
+  - Missing file error handling
+  - Invalid JSON error handling
+  - Invalid config structure validation
 - **Agent Swarm Core Scripts** (`scripts/`)
   - `spawn-agent.ps1`: Spawn AI agents (Codex or Claude) with independent worktrees
   - `check-agents.ps1`: Monitor agent status every 10 minutes, auto-retry on failure
