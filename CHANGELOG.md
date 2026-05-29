@@ -36,11 +36,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - **README.md**: Complete rewrite as Agent Swarm user guide (from test project to AI agent orchestration)
 - `.gitignore`: Ignore `node_modules/` directory
-
-### Removed
-
-- **Test Coverage**: Removed `index.test.js` and `loadConfig()` function (deprioritized for Agent Swarm focus)
-- **Test Script**: Simplified `package.json` test script to placeholder
+- **Dependencies**: Updated test script in `package.json` from placeholder to `node --test index.test.js`
 
 ### Documentation
 
